@@ -1,3 +1,2 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+print('Welcome to GeoPolitik, the political game that puts you in command!\n'
+    'Face the geo-political challenges to become the dominant power!')
