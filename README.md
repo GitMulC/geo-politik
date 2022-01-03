@@ -1,6 +1,14 @@
+# Geo-Politik
+Geo-Politik is a political game, putting you into the seat of power of your respective country. In Geo-Politik you make all of the important decisions and you are the driving force of all your countries decisions. Geo-Politik is designed as a text based adventure game, but it has the user making geo-political decisions to traverese through the adventure. Rather than a playable character, you are a playable country that is navigating through an ever escalating geographical and political climate. 
+
+## User Stories
+- As a user I want to play a text based political game where I get to make decisions about my country of choice
+- As a user I want to learn about the impact of political decisions on a country. 
+- As a user I want to know more about how seemingly small decisions can have long lasting effects on a geo-political climate.
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome USER_NAME,
+Welcome GitMulC,
 
 This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
 
