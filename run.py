@@ -9,7 +9,7 @@ def menu():
         print('Play - p')
         print('Quit - q\n')
 
-        selection = input('Select an option:')
+        selection = input('Select an option: ')
 
         if menu_validate(selection):
             print(f'You have chosen {selection}')
@@ -24,8 +24,12 @@ def menu_validate(values):
     if len(values) == 1:
         print('Correct text!')
         return True
-    else:
+    elif len(values) != 1:
         print('Wrong text!')
+        return False
+    elif values.isalpha():
+        return True
+    else:
         return False
 
 
