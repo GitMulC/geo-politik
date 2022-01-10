@@ -79,8 +79,11 @@
 #         current_scenario += 1
 
 def make_decision():
+    """
+    input validation
+    """
     decision = ''
-    while decision != 'y' and decision != 'n' and decision !='d': #input validation
+    while decision != 'y' and decision != 'n' and decision != 'd':
         decision = input('What is your decision? (y/n/d): ')
     return decision
 
@@ -88,11 +91,15 @@ def make_decision():
 def check_decision1(make_decision):
     correct_decision1 = 'n'
     correct_decision2 = 'd'
-    if make_decision == correct_decision1 or make_decision == correct_decision2:
+    if make_decision == correct_decision1:
+        print('Correct!')
+        second_decision()
+    elif make_decision == correct_decision2:
         print('Correct!')
         second_decision()
     else:
         print('Game Over')
+
 
 def check_decision2(make_decision):
     correct_decision1 = 'n'
@@ -106,16 +113,41 @@ def check_decision2(make_decision):
     else:
         print('Game Over')
 
+
 def check_decision3(make_decision):
     correct_decision1 = 'y'
     correct_decision2 = 'd'
     if make_decision == correct_decision1:
         print('You contact the US')
         print('Correct!')
+        fifth_decision()
     elif make_decision == correct_decision2:
         print('You contact the US')
         print('but China gets wind of this and blocks communications')
         print('Correct!')
+        fourth_decision()
+    else:
+        print('Game Over')
+
+
+def check_decision4(make_decision):
+    correct_decision = 'y'
+    if make_decision == correct_decision:
+        print('Correct!')
+        fifth_decision()
+    else:
+        print('Game Over')
+
+
+def check_decision5(make_decision):
+    correct_decision1 = 'n'
+    correct_decision2 = 'd'
+    if make_decision == correct_decision1:
+        print('Correct!')
+        print('You Win!')
+    elif make_decision == correct_decision2:
+        print('Correct!')
+        print('You Win!')
     else:
         print('Game Over')
 
@@ -146,17 +178,30 @@ def third_decision():
     choice = make_decision()
     check_decision3(choice)
 
+
 def fourth_decision():
     print('You fight China')
     print("But the odds aren't in your favour")
     print('PLA takes Kinmen Island')
-    print('Your vice president implores you to send for urgent assitance from the USA')
+    print('Your vice president urges you to send for assitance from the USA')
     print('Do you send a special envoy to the US?\n')
     choice = make_decision()
+    check_decision4(choice)
+
+
+def fifth_decision():
+    print('US responds and promises to come to your defence')
+    print('But this will take time.')
+    print('Your defence minister says they have a plan to strike')
+    print('Bejing with a lethal airstrike to take out the Chairman')
+    print('Do you carry out this strike?\n')
+    choice = make_decision()
+    check_decision5(choice)
+
 
 play_again = 'yes'
 while play_again == 'yes' or play_again == 'y':
     first_decision()
     # second_decision()
     # third_decision()
-    play_again = input('Do you want to play again? (yes or y to contiune playing): ')
+    play_again = input('Do you want to play again? (yes or y to play again): ')
