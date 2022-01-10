@@ -1,3 +1,15 @@
+import os
+from os import system, name
+import time
+
+
+def clear():
+    """
+    Clear function to clean-up the terminal so things don't get messy.
+    """
+    os.system("cls" if os.name == "nt" else "clear")
+
+
 # def menu():
 #     """
 #     Runs opening menu screen on startup.
@@ -78,130 +90,118 @@
 #         print('You deliberate with you cabinet')
 #         current_scenario += 1
 
+
 def make_decision():
     """
     input validation
     """
     decision = ''
     while decision != 'y' and decision != 'n' and decision != 'd':
-        decision = input('What is your decision? (y/n/d): ')
+        print('Please make a valid decision\n')
+        decision = input(
+            'What is your decision?\n'
+            'y for yes\n'
+            'n for no\n'
+            'd for deliberate\n').lower()
     return decision
 
 
-def check_decision1(make_decision):
-    correct_decision1 = 'n'
-    correct_decision2 = 'd'
-    if make_decision == correct_decision1:
-        print('Correct!')
-        second_decision()
-    elif make_decision == correct_decision2:
-        print('Correct!')
-        second_decision()
-    else:
-        print('Game Over')
-
-
-def check_decision2(make_decision):
-    correct_decision1 = 'n'
-    correct_decision2 = 'd'
-    if make_decision == correct_decision1:
-        print('Correct!')
-        fourth_decision()
-    elif make_decision == correct_decision2:
-        print('Correct!')
-        third_decision()
-    else:
-        print('Game Over')
-
-
-def check_decision3(make_decision):
-    correct_decision1 = 'y'
-    correct_decision2 = 'd'
-    if make_decision == correct_decision1:
-        print('You contact the US')
-        print('Correct!')
-        fifth_decision()
-    elif make_decision == correct_decision2:
-        print('You contact the US')
-        print('but China gets wind of this and blocks communications')
-        print('Correct!')
-        fourth_decision()
-    else:
-        print('Game Over')
-
-
-def check_decision4(make_decision):
-    correct_decision = 'y'
-    if make_decision == correct_decision:
-        print('Correct!')
-        fifth_decision()
-    else:
-        print('Game Over')
-
-
-def check_decision5(make_decision):
-    correct_decision1 = 'n'
-    correct_decision2 = 'd'
-    if make_decision == correct_decision1:
-        print('Correct!')
-        print('You Win!')
-    elif make_decision == correct_decision2:
-        print('Correct!')
-        print('You Win!')
-    else:
-        print('Game Over')
-
-
 def first_decision():
+    clear()
     print('China flys fighter jets over Taipei regularly')
     print('Your defence minister urges you to retaliate.')
     print('Will you follow this advice?\n')
     choice = make_decision()
-    check_decision1(choice)
+    if choice in ['d', 'n']:
+        print('Correct!')
+        time.sleep(2)
+        second_decision()
+    else:
+        time.sleep(2)
+        print('Game Over!')
+        # Game over function here
+    # check_decision1(choice)
 
 
 def second_decision():
+    clear()
     print('You do nothing')
     print('China intensifies its flyovers and invades Kinmen Island')
     print('Your foreign minister suggests you let China have the island')
     print('What will you do?\n')
     choice = make_decision()
-    check_decision2(choice)
+    # check_decision2(choice)
+    if choice in ['d', 'n']:
+        print('Correct!')
+        time.sleep(2)
+        if choice == 'n':
+            fourth_decision()
+        else:
+            third_decision()
+    else:
+        time.sleep(2)
+        print('Game Over!')
+        # Game over function here
 
 
 def third_decision():
+    clear()
     print('You are reluctant to fight and hesitate')
     print('Japan and Korea then join the fight on your side')
     print('You lose the island but gain allies')
     print('Your defence minister asks you to appeal to the USA')
     print('Do you appeal to the USA?\n')
     choice = make_decision()
-    check_decision3(choice)
+    # check_decision3(choice)
+    if choice in ['y', 'd']:
+        print('You contact the US')
+        time.sleep(2)
+        if choice == 'y':
+            fifth_decision()
+        else:
+            fourth_decision()
+    else:
+        time.sleep(2)
+        print('Game Over!')
+        # Game over function here
 
 
 def fourth_decision():
+    clear()
     print('You fight China')
     print("But the odds aren't in your favour")
     print('PLA takes Kinmen Island')
     print('Your vice president urges you to send for assitance from the USA')
     print('Do you send a special envoy to the US?\n')
     choice = make_decision()
-    check_decision4(choice)
+    # check_decision4(choice)
+    if choice == 'y':
+        fifth_decision()
+    else:
+        time.sleep(2)
+        print('Game Over!')
+        # Game over function here
 
 
 def fifth_decision():
+    clear()
     print('US responds and promises to come to your defence')
     print('But this will take time.')
     print('Your defence minister says they have a plan to strike')
     print('Bejing with a lethal airstrike to take out the Chairman')
     print('Do you carry out this strike?\n')
     choice = make_decision()
-    check_decision5(choice)
+    # check_decision5(choice)
+    if choice in ['d', 'n']:
+        time.sleep(2)
+        print('You Win!')
+    else:
+        time.sleep(2)
+        print('Game Over!')
+        # Game over function here
 
 
 play_again = 'yes'
 while play_again == 'yes' or play_again == 'y':
     first_decision()
-    # second_decision()
-    # third_decision()
     play_again = input('Do you want to play again? (yes or y to play again): ')
