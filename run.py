@@ -43,52 +43,39 @@ def clear():
 #     # return selection
 
 
-# # def menu_validate(values):
-# #     """
-# #     Check if selection in menu is correct.
-# #     """
-# #     # if len(values) == 1:
-# #     #     print('Correct text!')
-# #     #     return True
-# #     # elif len(values) != 1:
-# #     #     print('Wrong text!')
-# #     #     return False
-# #     # elif values.isalpha():
-# #     #     return True
-# #     if
-# #     else:
-# #         return False
+def menu_option():
+    """
+    Main menu function.
+    Is the opening title screen and brings you to other parts of the program.
+    """
+    selection = ''
+    while selection != 'a' and selection != 'p' and selection != 'q':
+        print('Please select one option')
+        selection = input(
+            'a for about\n'
+            'p for play\n'
+            'q for quit\n').lower()
+    return selection
 
 
-# # menu()
-
-# current_scenario = 0
-
-
-# def main_game():
-#     """
-#     """
-#     scenario_texts = [
-#         'China flyovers. Defence misniter urges retaliation.',
-#         'Something else bad happens.\nWhat do?',
-#         'blah'
-#     ]
-#     while True:
-#         print(scenario_texts[current_scenario])
-#         selection = input('\nWhat will you do?\n')
-#         decision()
-
-
-# def decision(current_scenario,selection):
-#     if selection == 'y':
-#         print('You retaliate, China responds')
-#         game_over()
-#     elif selection == 'n':
-#         print('You do nothing')
-#         current_scenario += 1
-#     elif selection == 'd':
-#         print('You deliberate with you cabinet')
-#         current_scenario += 1
+def main_menu():
+    clear()
+    print(
+        'Welcome to GeoPolitik, the text based Geo-political game!\n'
+        'Navigate through the world of geography & politics\n'
+        'to overcome your regions geo-political challenges\n'
+        'Select an option below to start:\n'
+        'About >> a\n'
+        'Play >> p\n'
+        'Quit >> q\n'
+    )
+    option = menu_option()
+    if option == 'p':
+        first_decision()
+    # elif option == 'a':
+    #     about_page()
+    # else:
+    #     quit()
 
 
 def make_decision():
@@ -118,14 +105,14 @@ def first_decision():
     print('Will you follow this advice?\n')
     choice = make_decision()
     if choice in ['d', 'n']:
-        print('Correct!')
+        print('You wait it out and see what happens')
         time.sleep(2)
         second_decision()
     else:
         time.sleep(2)
         print('Game Over!')
         # Game over function here
-    # check_decision1(choice)
+
 
 
 def second_decision():
@@ -134,12 +121,10 @@ def second_decision():
     Determines outcome of the second decision the user makes.
     """
     clear()
-    print('You do nothing')
     print('China intensifies its flyovers and invades Kinmen Island')
     print('Your foreign minister suggests you let China have the island')
     print('What will you do?\n')
     choice = make_decision()
-    # check_decision2(choice)
     if choice in ['d', 'n']:
         print('Correct!')
         time.sleep(2)
@@ -165,7 +150,6 @@ def third_decision():
     print('Your defence minister asks you to appeal to the USA')
     print('Do you appeal to the USA?\n')
     choice = make_decision()
-    # check_decision3(choice)
     if choice in ['y', 'd']:
         print('You contact the US')
         time.sleep(2)
@@ -191,7 +175,6 @@ def fourth_decision():
     print('Your vice president urges you to send for assitance from the USA')
     print('Do you send a special envoy to the US?\n')
     choice = make_decision()
-    # check_decision4(choice)
     if choice == 'y':
         fifth_decision()
     else:
@@ -212,7 +195,6 @@ def fifth_decision():
     print('Bejing with a lethal airstrike to take out the Chairman')
     print('Do you carry out this strike?\n')
     choice = make_decision()
-    # check_decision5(choice)
     if choice in ['d', 'n']:
         time.sleep(2)
         print('You Win!')
@@ -226,5 +208,5 @@ Play again loop to keep user within the game.
 """
 play_again = 'yes'
 while play_again == 'yes' or play_again == 'y':
-    first_decision()
+    main_menu()
     play_again = input('Do you want to play again? (yes or y to play again): ')
