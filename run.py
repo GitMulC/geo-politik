@@ -114,7 +114,6 @@ def first_decision():
         # Game over function here
 
 
-
 def second_decision():
     """
     Second decision function in Taiwan game.
@@ -202,6 +201,7 @@ def fifth_decision():
         time.sleep(2)
         print('Game Over!')
         # Game over function here
+
 
 """
 Play again loop to keep user within the game.
