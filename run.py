@@ -422,8 +422,134 @@ def game2_third_decision():
     print(
         'You deploy your troops along the eastern border to shore up\n'
         'your defences. In response Russia sends troops into Ukraine\n'
-        'and Lithuainia'
+        'and Lithuania. You recieve a private communiqué from the Russian\n'
+        'president himself. He tells you to cease your aggressive actions\n'
+        'and pull your troops away from the sovreign borders of Ukraine and\n'
+        'Lithuania or face dire consequencecs.\n'
+        'Do you give into Russian demands?\n'
     )
+    choice = make_decision()
+    if choice in ['d', 'n']:
+        print(
+            'You ignore Russia, you know giving into their demands\n'
+            'will only weaken your already tenuous postion.\n'
+        )
+        time.sleep(5)
+        game2_fourth_decision()
+    else:
+        print(
+            'You retreat with your tail between your legs and withdraw\n'
+            'all defence forces on the border. Russia acts with impunity\n'
+            'in eastern Europe and sabotages Polish elections, judical\n'
+            'system and finally tanks its economy leaving it open for\n'
+            'Russian occupation!\n'
+        )
+        time.sleep(5)
+        print('Game Over!')
+
+
+def game2_fourth_decision():
+    """
+    Fourth decision function in Poland game.
+    Determines outcome of the fourth decision the user makes.
+    """
+    clear()
+    print(
+        'You leak the communiqué to the public. The Polish population is\n'
+        'outraged! Your European and American allies rally around you as\n'
+        'they begin to move their forces towards Poland. French and\n'
+        'German troops start pouring into Poland. The US mobilizes its\n'
+        'Atlantic fleet. Feeling the pressure, Russia imposes a no-fly\n'
+        'zone over Polands eastern borders. Russian spy planes begin\n'
+        'tracking troop movements, followed by Russian fighter jets\n'
+        'excursions deep into Polish territory. Your on the ground\n'
+        'generals inform you that they can easily down these planes with\n'
+        'your permission.\n'
+        'Do you give the go ahead to your generals?\n'
+    )
+    choice = make_decision()
+    if choice == 'n':
+        print(
+            'You infrom your generals that the rules of engagement do not\n'
+            'allow you to strike first. Your decision to show restraint pays\n'
+            'off as the international community by and large demands Russian\n'
+            'withdrawl from the region. Fierce and violent protests flair up\n'
+            'in Ukraine and Lithuania and Russian troops have to be summoned\n'
+            'to quell the civil unrest. US and Europe impose punative\n'
+            'sanctions that soon crush the Russian economy. Russian\n'
+            'occupation waivers and soon recedes back to Moscow!\n'
+        )
+        time.sleep(5)
+        print('You Win!')
+    elif choice == 'd':
+        print(
+            'You tell your generals to hold off and wait for the right\n'
+            'moment to engage Russia.\n'
+        )
+        time.sleep(5)
+        game2_fifth_decision()
+    else:
+        print(
+            'You give the go ahead. As soon as you down a Russian aircraft\n'
+            'Russian troops engage in open conflict with you before your\n'
+            'your allies can arrive and respond. They do eventually arrive\n'
+            'to relieve you and begin to push the Russians back. Russian\n'
+            'troops retreat to the Russian border. Fearing an invasion the\n'
+            'Russian high command authorizes a nuclear strike! the world\n'
+            'lies decimated after the nukes have landed!'
+        )
+        time.sleep(5)
+        print('Game Over!')
+
+
+def game2_fifth_decision():
+    """
+    Fifth decision function in Poland game.
+    Determines outcome of the fifth decision the user makes.
+    """
+    clear()
+    print(
+        'The right moment never arrives, but nevertheless you stand firm\n'
+        'in the face of an occupying force. As French and German troops\n'
+        'arrive Russia begins to cool off and wind down the excursions\n'
+        'and threats. However, Russia shuts down its natural gas pipelines\n'
+        'going into Poland. This source of energy is vital to Polands\n'
+        'survival! You want to involve America and request it put boots\n'
+        'on the ground in Poland. Your cabinet warns you further\n'
+        'intervention by western allies may provoke Russia to retaliate\n'
+        'with force.\n'
+        'Do you ask for US troops in Poland?\n'
+    )
+    choice = make_decision()
+    if choice == 'y':
+        print(
+            'You relay to the US ambassador that military intervention\n'
+            'by the US is urgently needed. America honours its NATO\n'
+            'allegiance to Poland and moves in battalions to the country\n'
+            'The US Atlantic fleet imposes a blockade of all Russian\n'
+            'in the Baltic sea. Soon Russian bases and puppets in eastern\n'
+            'Europe crumble. Fierce and violent protests flair up\n'
+            'in Ukraine and Lithuania, and Russian troops have to be called\n'
+            'to quell the civil unrest. US and Europe impose punative\n'
+            'sanctions that soon crush the Russian economy. Russian\n'
+            'aggression waivers and soon recedes back to Moscow!\n'
+        )
+        time.sleep(5)
+        print('You Win!')
+    else:
+        print(
+            'You fear angering Russia and so you refuse to contact the US\n'
+            'as there is no invasion so far. But Russia has already begun\n'
+            'its subversion of Polish democracy. Elections are rigged,\n'
+            'a terrorist attack occurs in Warsaw with suspected Russian\n'
+            'involvement. French and German troops grow restless and soon\n'
+            'pull out for fear of Russian retaliation at home. Alone\n'
+            'against Russia you sue for peace and sign unfavourable treaty\n'
+            'after unfavourable treaty and are soon under the Russian\n'
+            'umbrella!\n'
+        )
+        time.sleep(5)
+        print('Game Over!')
 
 play_again = 'yes'
 """
