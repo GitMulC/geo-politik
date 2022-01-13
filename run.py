@@ -45,8 +45,8 @@ def clear():
 
 def menu_option():
     """
-    Main menu function.
-    Is the opening title screen and brings you to other parts of the program.
+    Main menu selection function.
+    Uses while loop to make sure user selects one of the provided options.
     """
     selection = ''
     while selection != 'a' and selection != 'p' and selection != 'q':
@@ -56,6 +56,22 @@ def menu_option():
             'p for play\n'
             'q for quit\n').lower()
     return selection
+
+
+def gamemode():
+    """
+    Gamemode selection function.
+    Uses while loop to make sure user selects one of the provided options.
+    """
+    gamechoice = ''
+    while gamechoice != '1' and gamechoice != '2' and gamechoice != '3':
+        print('Please select one option')
+        gamechoice = input(
+            '1 for Taiwan scenario\n'
+            '2 for Poland scenario\n'
+            '3 for Mongolia scenario\n'
+        )
+    return gamechoice
 
 
 def main_menu():
@@ -76,7 +92,20 @@ def main_menu():
     )
     option = menu_option()
     if option == 'p':
-        game1_first_decision()
+        clear()
+        print(
+            "Please select which scenario you'd like to play:\n"
+            '1 >> Taiwan\n'
+            '2 >> Poland\n'
+            '3 >> Mongolia\n'
+        )
+        gameselect = gamemode()
+        if gameselect == '1':
+            game1_first_decision()
+        elif gameselect == '2':
+            game2_first_decision()
+        elif gameselect == '3':
+            game3_first_decision()
     # elif option == 'a':
     #     about_page()
     # else:
@@ -304,6 +333,97 @@ def game1_fifth_decision():
         print('Game Over!')
         # Game over function here
 
+
+def game2_first_decision():
+    """
+    First decision function in Poland game.
+    Determines outcome of the first decision the user makes.
+    """
+    clear()
+    print(
+        'In eastern Europe, Russia is flexing its military muscles\n'
+        'A few months ago Ukraine was conquered by Russia and now the\n'
+        'the Baltic states have been annexed by Russia. The Iron Curtain\n'
+        'seems to be coming down again! As the Polish president you watch\n'
+        'these events unfurl from a distance, but with Russian troops\n'
+        "knocking at your eastern border, you realize it's time to take\n"
+        'action. You think that deploying your army across your eastern\n'
+        'border is the best course of action\n'
+        'Will you follow through with this?\n'
+    )
+    choice = make_decision()
+    if choice in ['d', 'y']:
+        if choice == 'd':
+            print(
+                'You decide to consult your cabinet about the matter.\n'
+            )
+            time.sleep(5)
+            game2_second_decision()
+        elif choice == 'y':
+            print(
+                'You think that mobilizing ASAP to the east is your best\n'
+                'option to deter the Russians.\n'
+            )
+            time.sleep(5)
+            game2_third_decision()
+        else:
+            print(
+                'You decide against deploying any serious force to the east\n'
+                'which Russia takes note of! They begin to accuse Poland of\n'
+                'incursions into Lithuanian territory. These false\n'
+                'accusationsare what Russia use as their excuse to invade.\n'
+                'Within a days Warsaw falls and Poland falls under the new\n'
+                'Iron Curtain!\n'
+            )
+            time.sleep(5)
+            print('Game Over!')
+
+
+def game2_second_decision():
+    """
+    Second decision function in Poland game.
+    Determines outcome of the second decision the user makes.
+    """
+    clear()
+    print(
+        'Your cabinet advises you to contact Europe and the US for\n'
+        'assistance. You then consult the US president and the\n'
+        'European parliment on what to do. They both tell you to\n'
+        'deploy your army in small numbers and grdually. You are\n'
+        'fearful of a Russian response to your deployment.\n'
+        'Do you listen to your allies advice?'
+    )
+    choice = make_decision()
+    if choice == 'y':
+        print(
+            'You listen to the council of your allies and slowly build up\n'
+            'troops on your eastern border.\n'
+        )
+        time.sleep(5)
+        game2_third_decision()
+    else:
+        print(
+            'Your inability to act quickly proves to be your downfall.\n'
+            'Eventually the Russian presence on the border is too built up\n'
+            'and incursions into Polish territory begin to occur. You see\n'
+            'the writing on the wall and sign a non-aggression pact with\n'
+            'Russia, paving the way for Russian annexation!\n'
+        )
+    time.sleep(5)
+    print('Game Over!')
+
+
+def game2_third_decision():
+    """
+    Third decision function in Poland game.
+    Determines outcome of the third decision the user makes.
+    """
+    clear()
+    print(
+        'You deploy your troops along the eastern border to shore up\n'
+        'your defences. In response Russia sends troops into Ukraine\n'
+        'and Lithuainia'
+    )
 
 play_again = 'yes'
 """
