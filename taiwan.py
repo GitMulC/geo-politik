@@ -1,11 +1,10 @@
 import time
-# from run import make_decision, clear, repeat_game
 import helpers
 
 
-def game1_first_decision():
+def tw_first_decision():
     """
-    First decision function in Taiwan game/game1.
+    First decision function in Taiwan game/tw.
     Determines outcome of the first decision the user makes.
     """
     helpers.clear()
@@ -27,7 +26,7 @@ def game1_first_decision():
         )
         time.sleep(5)
         input('\nPress enter to continue')
-        game1_second_decision()
+        tw_second_decision()
     else:
         print(
             'You retaliate and shoot down a Chinese fighter jet over Taiwan.\n'
@@ -39,12 +38,11 @@ def game1_first_decision():
         time.sleep(2)
         print('Game Over!')
         helpers.repeat_game()
-        # Game over function here
 
 
-def game1_second_decision():
+def tw_second_decision():
     """
-    Second decision function in Taiwan game/game1.
+    Second decision function in Taiwan game/tw.
     Determines outcome of the second decision the user makes.
     """
     helpers.clear()
@@ -70,12 +68,12 @@ def game1_second_decision():
             print('You decide to meet the Chinese in open war.\n')
             time.sleep(5)
             input('\nPress enter to continue')
-            game1_fourth_decision()
+            tw_fourth_decision()
         else:
             print('You weigh out your options and again, you wait it out.\n')
             time.sleep(5)
             input('\nPress enter to continue')
-            game1_third_decision()
+            tw_third_decision()
     else:
         print(
             'You evacuate the island leaving it open for Chinese occupations\n'
@@ -86,12 +84,11 @@ def game1_second_decision():
         time.sleep(5)
         print('Game Over!')
         helpers.repeat_game()
-        # Game over function here
 
 
-def game1_third_decision():
+def tw_third_decision():
     """
-    Third decision function in Taiwan game/game1.
+    Third decision function in Taiwan game/tw.
     Determines outcome of the third decision the user makes.
     """
     helpers.clear()
@@ -116,7 +113,7 @@ def game1_third_decision():
             )
             time.sleep(5)
             input('\nPress enter to continue')
-            game1_fifth_decision()
+            tw_fifth_decision()
         else:
             print(
                 'You mobilize your troops and begin fighting China.\n'
@@ -126,7 +123,7 @@ def game1_third_decision():
             )
             time.sleep(5)
             input('\nPress enter to continue')
-            game1_fourth_decision()
+            tw_fourth_decision()
     else:
         print(
             'You refuse to ask for US assitance and confidently\n'
@@ -138,10 +135,9 @@ def game1_third_decision():
         time.sleep(5)
         print('Game Over!')
         helpers.repeat_game()
-        # Game over function here
 
 
-def game1_fourth_decision():
+def tw_fourth_decision():
     """
     Fourth decision function in Taiwan game.
     Determines outcome of the fourth decision the user makes.
@@ -162,7 +158,7 @@ def game1_fourth_decision():
         )
         time.sleep(5)
         input('\nPress enter to continue')
-        game1_fifth_decision()
+        tw_fifth_decision()
     else:
         print(
             'You refuse to ask for US assitance and confidently\n'
@@ -174,10 +170,9 @@ def game1_fourth_decision():
         time.sleep(5)
         print('Game Over!')
         helpers.repeat_game()
-        # Game over function here
 
 
-def game1_fifth_decision():
+def tw_fifth_decision():
     """
     Fifth decision function in Taiwan game.
     Determines outcome of the fifth decision the user makes.
@@ -222,4 +217,3 @@ def game1_fifth_decision():
         time.sleep(5)
         print('Game Over!')
         helpers.repeat_game()
-        # Game over function here
