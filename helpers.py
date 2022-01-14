@@ -1,7 +1,5 @@
 import os
 from os import system, name
-# from taiwan import game1_first_decision
-# from poland import game2_first_decision
 import taiwan
 import poland
 
@@ -71,11 +69,11 @@ def main_menu():
         )
         gameselect = gamemode()
         if gameselect == '1':
-            taiwan.game1_first_decision()
+            taiwan.tw_first_decision()
         elif gameselect == '2':
-            poland.game2_first_decision()
-        elif gameselect == '3':
-            game3_first_decision()
+            poland.pol_first_decision()
+        # elif gameselect == '3':
+        #     mongolia.mog_first_decision() 
     # elif option == 'a':
     #     about_page()
     # else:
@@ -99,7 +97,6 @@ def make_decision():
 
 
 def repeat_game():
-    # play_again = 'yes'
     """
     Play again loop to keep user within the game.
     """
