@@ -1,6 +1,4 @@
 import helpers
-import taiwan
-import poland
 
 
 # Only run if main app is called
