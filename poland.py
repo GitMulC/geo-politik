@@ -1,9 +1,8 @@
 import time
-# from run import make_decision, clear, repeat_game
 import helpers
 
 
-def game2_first_decision():
+def pol_first_decision():
     """
     First decision function in Poland game.
     Determines outcome of the first decision the user makes.
@@ -29,7 +28,7 @@ def game2_first_decision():
             )
             time.sleep(5)
             input('\nPress enter to continue')
-            game2_second_decision()
+            pol_second_decision()
         elif choice == 'y':
             print(
                 'You think that mobilizing ASAP to the east is your best\n'
@@ -37,7 +36,7 @@ def game2_first_decision():
             )
             time.sleep(5)
             input('\nPress enter to continue')
-            game2_third_decision()
+            pol_third_decision()
         else:
             print(
                 'You decide against deploying any serious force to the east\n'
@@ -52,7 +51,7 @@ def game2_first_decision():
             helpers.repeat_game()
 
 
-def game2_second_decision():
+def pol_second_decision():
     """
     Second decision function in Poland game.
     Determines outcome of the second decision the user makes.
@@ -75,7 +74,7 @@ def game2_second_decision():
         )
         time.sleep(5)
         input('\nPress enter to continue')
-        game2_third_decision()
+        pol_third_decision()
     else:
         print(
             'Your inability to act quickly proves to be your downfall.\n'
@@ -89,7 +88,7 @@ def game2_second_decision():
     helpers.repeat_game()
 
 
-def game2_third_decision():
+def pol_third_decision():
     """
     Third decision function in Poland game.
     Determines outcome of the third decision the user makes.
@@ -113,7 +112,7 @@ def game2_third_decision():
         )
         time.sleep(5)
         input('\nPress enter to continue')
-        game2_fourth_decision()
+        pol_fourth_decision()
     else:
         print(
             'You retreat with your tail between your legs and withdraw\n'
@@ -127,7 +126,7 @@ def game2_third_decision():
         helpers.repeat_game()
 
 
-def game2_fourth_decision():
+def pol_fourth_decision():
     """
     Fourth decision function in Poland game.
     Determines outcome of the fourth decision the user makes.
@@ -168,7 +167,7 @@ def game2_fourth_decision():
         )
         time.sleep(5)
         input('\nPress enter to continue')
-        game2_fifth_decision()
+        pol_fifth_decision()
     else:
         print(
             'You give the go ahead. As soon as you down a Russian aircraft\n'
@@ -184,7 +183,7 @@ def game2_fourth_decision():
         helpers.repeat_game()
 
 
-def game2_fifth_decision():
+def pol_fifth_decision():
     """
     Fifth decision function in Poland game.
     Determines outcome of the fifth decision the user makes.
