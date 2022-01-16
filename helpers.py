@@ -131,6 +131,6 @@ def repeat_game():
                 'Exiting game...'
             )
             time.sleep(3)
-            break
+            exit()
         else:
             print('Invalid option, please try again.')
