@@ -34,7 +34,10 @@ Return back to the [README.md](README.md)
 
 ## Bugs/Fixed Bugs
 
-- One bug I encountered during this project was a circular import error. This started to occur when I split all my python code into separate files and importing them to each other. To over come this circular import error I kept getting, I added in an additional statement to a function that was imported. For example, instead of coding {clear()} into the helpers.py and simply importing it over to the taiwan.py file, I had to add in the helpers before it {helpers.clear()} in every instance outside the helpers.py file I used it.
-    - ![Circular Import Bug]()
+- One bug I encountered during this project was a circular import error. This started to occur when I split all my python code into separate files and importing them to each other. 
+- To over come this circular import error I kept getting, I added in an additional statement to a function that was imported. 
+- For example, instead of coding {clear()} into the helpers.py and simply importing it over to the taiwan.py file, I had to add in the helpers before it {helpers.clear()} in every instance outside the helpers.py file I used it.
+
+    - ![Circular Import Bug](documents/python-code-validation/circular-import-bug.png)
 
 ## Unfixed Bugs
