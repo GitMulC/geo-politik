@@ -26,7 +26,7 @@ def pol_first_decision():
             print(
                 'You decide to consult your cabinet about the matter.\n'
             )
-            time.sleep(5)
+            time.sleep(2)
             input('\nPress enter to continue')
             pol_second_decision()
         elif choice == 'y':
@@ -34,7 +34,7 @@ def pol_first_decision():
                 'You think that mobilizing ASAP to the east is your best\n'
                 'option to deter the Russians.\n'
             )
-            time.sleep(5)
+            time.sleep(2)
             input('\nPress enter to continue')
             pol_third_decision()
         else:
@@ -46,7 +46,7 @@ def pol_first_decision():
                 'Within a days Warsaw falls and Poland falls under the new\n'
                 'Iron Curtain!\n'
             )
-            time.sleep(5)
+            time.sleep(2)
             print('Game Over!')
             helpers.repeat_game()
 
@@ -72,7 +72,7 @@ def pol_second_decision():
             'You listen to the council of your allies and slowly build up\n'
             'troops on your eastern border.\n'
         )
-        time.sleep(5)
+        time.sleep(2)
         input('\nPress enter to continue')
         pol_third_decision()
     else:
@@ -83,7 +83,7 @@ def pol_second_decision():
             'the writing on the wall and sign a non-aggression pact with\n'
             'Russia, paving the way for Russian annexation!\n'
         )
-    time.sleep(5)
+    time.sleep(2)
     print('Game Over!')
     helpers.repeat_game()
 
@@ -110,7 +110,7 @@ def pol_third_decision():
             'You ignore Russia, you know giving into their demands\n'
             'will only weaken your already tenuous postion.\n'
         )
-        time.sleep(5)
+        time.sleep(2)
         input('\nPress enter to continue')
         pol_fourth_decision()
     else:
@@ -121,7 +121,7 @@ def pol_third_decision():
             'system and finally tanks its economy leaving it open for\n'
             'Russian occupation!\n'
         )
-        time.sleep(5)
+        time.sleep(2)
         print('Game Over!')
         helpers.repeat_game()
 
@@ -158,14 +158,15 @@ def pol_fourth_decision():
             'sanctions that soon crush the Russian economy. Russian\n'
             'occupation waivers and soon recedes back to Moscow!\n'
         )
-        time.sleep(5)
+        time.sleep(2)
         print('You Win!')
+        helpers.repeat_game()
     elif choice == 'd':
         print(
             'You tell your generals to hold off and wait for the right\n'
             'moment to engage Russia.\n'
         )
-        time.sleep(5)
+        time.sleep(2)
         input('\nPress enter to continue')
         pol_fifth_decision()
     else:
@@ -178,7 +179,7 @@ def pol_fourth_decision():
             'Russian high command authorizes a nuclear strike! the world\n'
             'lies decimated after the nukes have landed!'
         )
-        time.sleep(5)
+        time.sleep(2)
         print('Game Over!')
         helpers.repeat_game()
 
@@ -216,8 +217,9 @@ def pol_fifth_decision():
             'sanctions that soon crush the Russian economy. Russian\n'
             'aggression waivers and soon recedes back to Moscow!\n'
         )
-        time.sleep(5)
+        time.sleep(2)
         print('You Win!')
+        helpers.repeat_game()
     else:
         print(
             'You fear angering Russia and so you refuse to contact the US\n'
@@ -230,6 +232,6 @@ def pol_fifth_decision():
             'after unfavourable treaty and are soon under the Russian\n'
             'umbrella!\n'
         )
-        time.sleep(5)
+        time.sleep(2)
         print('Game Over!')
         helpers.repeat_game()
