@@ -110,7 +110,7 @@ def mog_third_decision():
     helpers.clear()
     print(
         'You soon realise that this trade agreement mostly benefits China.\n'
-        'Much of the infrastructure that China promised it would build all\n'
+        'Much of the factories and supply chains it promised to build all\n'
         'all over Mongolia is only being built near the mines. This gives\n'
         'Mongolia only a short, temporary economic boost. Rare mineral\n'
         'plummet and as a result you economy slows its growth. Seeing their\n'
@@ -138,6 +138,49 @@ def mog_third_decision():
         time.sleep(2)
         input('\nPress enter to continue')
         mog_fourth_decision()
+    else:
+        print(
+            'Fearing Chinese retaliation and a possible trade war with\n'
+            'Beijing you refuse the offer. But China only continues to\n'
+            'take advantage of your mines. Soon you lose control of all\n'
+            'your mining operations. China now dominates Mongolia through\n'
+            'its economic ties with you!\n'
+        )
+        time.sleep(2)
+        print('Game Over!')
+        helpers.repeat_game()
+
+
+def mog_fourth_decision():
+    """
+    Fourth decision function in Mongolia game/mog.
+    Determines outcome of the fourth decision the user makes.
+    """
+    helpers.clear()
+    print(
+        'As you remain indecisive on the Russian trade deal, tensions\n'
+        'between China and Russia flair up! They both compete with each\n'
+        'other fiercely. Russia sweetens the deal, offering open borders and\n'
+        'and access to natural gas pipelines within Russia! China realising\n'
+        'they may lose you to the Russians, threaten to cut all economic\n'
+        'ties with you (knowing full well it could destroy your economy)\n'
+        'if you accept the Russian offer. Both seek greater influence with\n'
+        'you! Your economic branch informs you that China needs the rare\n'
+        'minerals from Mongolia, and that cutting economic ties with you is\n'
+        'just a bluff to prevent you from becoming closer with Russia.\n'
+        'Will you accept the Russians trade agreement?\n'
+    )
+    choice = helpers.make_decision()
+    helpers.clear()
+    if choice == 'y':
+        print(
+            "You call China's bluff and progress with the Russian deal\n"
+            'Your guess was correct! China expresses disappointment but does\n'
+            'not cut economic ties. Russia assists in building up Mongolia!\n'
+            "Mongolia is on it's way to becoming a strong regional power!\n"
+        )
+        time.sleep(2)
+        print('You Win!')
     else:
         print(
             'Fearing Chinese retaliation and a possible trade war with\n'
