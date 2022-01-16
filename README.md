@@ -89,35 +89,33 @@ To view all testing documentation please refer to [TESTING.md](TESTING.md)
 
 - First step was to sign up to the Heroku online application using an email. Then authenticate and create your account on Heroku.
 
-- ![Heroku Sign Up]()
+- ![Heroku Sign Up](documents/heroku-screenshots/heroku-signup.png)
 
 - Then I went to my Heroku account dashboard and clicked new, then create new app.
 
-- ![Heroku Dashboard]()
+- ![Heroku Dashboard](documents/heroku-screenshots/heroku-dashboard.png)
 
-- ![Heroku Create New App]()
+- ![Heroku Create New App](documents/heroku-screenshots/heroku-create-new-app.png)
 
 - Next I gave my application a unique name geo-politik. Then I selected Europe for region.
 
-- ![Heroku App Creation]()
+- ![Heroku App Creation](documents/heroku-screenshots/heroku-app-creation.png)
 
 - After the app is created I selected the settings tab. In here I clicked on the Reveal Config Vars button. In the Key field I input PORT and in the VALUE field I input 8000.
 
 - Next I scrolled down to the buildpacks section and clicked on Add buildpacks. I first added the heroku/python buildpack and then the heroku/nodejs buildpack. It is important to add the heroku/python buildpack first and then the heroku/nodejs buildpack.
 
-- ![Heroku Tabs]()
+- ![Heroku Tabs](documents/heroku-screenshots/heroku-tabs.png)
 
-- ![Heroku Config Vars & Buildpacks]()
+- ![Heroku Config Vars & Buildpacks](documents/heroku-screenshots/heroku-settings-tab.png)
 
 - I then clicked on the Deploy tab. Here I selected GitHub as the deployment method. I then connected to my geo-politik repository on GitHub by typing it in and selecting it.
 
-- Finally ensured that automatic deploys were from the main bracnh. I clicked on enable automatic deploys and built the app.
+- Finally ensured that automatic deploys were from the main branch. I clicked on enable automatic deploys and built the app.
 
-- ![Heroku Deploy Tab]()
+- ![Heroku Deploy Tab](documents/heroku-screenshots/heroku-deploy-tab.png)
 
-- ![Heroku Automatic Deploy]()
-sign up to HEROKU, create app, select region, config vars(enviornment variables), buildpacks & order, deploy automatically, deploy tab select github SCREENSHOTS
-
+- ![Heroku Automatic Deploy](documents/heroku-screenshots/heroku-automatic-deploy.png)
 
 ### Local Deployment
 
