@@ -2,6 +2,7 @@ import os
 from os import system, name
 import taiwan
 import poland
+import mongolia
 
 
 def clear():
@@ -72,8 +73,8 @@ def main_menu():
             taiwan.tw_first_decision()
         elif gameselect == '2':
             poland.pol_first_decision()
-        # elif gameselect == '3':
-        #     mongolia.mog_first_decision() 
+        elif gameselect == '3':
+            mongolia.mog_first_decision()
     # elif option == 'a':
     #     about_page()
     # else:
