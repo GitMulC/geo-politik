@@ -24,7 +24,7 @@ def tw_first_decision():
             'You refuse to use any force to resolve the issue\n'
             'You wait it out and see what China plans to do next.\n'
         )
-        time.sleep(5)
+        time.sleep(2)
         input('\nPress enter to continue')
         tw_second_decision()
     else:
@@ -66,12 +66,12 @@ def tw_second_decision():
     if choice in ['d', 'n']:
         if choice == 'n':
             print('You decide to meet the Chinese in open war.\n')
-            time.sleep(5)
+            time.sleep(2)
             input('\nPress enter to continue')
             tw_fourth_decision()
         else:
             print('You weigh out your options and again, you wait it out.\n')
-            time.sleep(5)
+            time.sleep(2)
             input('\nPress enter to continue')
             tw_third_decision()
     else:
@@ -81,7 +81,7 @@ def tw_second_decision():
             'that Taiwan will be too slow to respond. With a lack of\n'
             'international will to support it, Taiwan falls to China.\n'
             )
-        time.sleep(5)
+        time.sleep(2)
         print('Game Over!')
         helpers.repeat_game()
 
@@ -111,7 +111,7 @@ def tw_third_decision():
                 'You reach out to the US and request immediate\n'
                 'assitance.\n'
             )
-            time.sleep(5)
+            time.sleep(2)
             input('\nPress enter to continue')
             tw_fifth_decision()
         else:
@@ -121,7 +121,7 @@ def tw_third_decision():
                 'against China will be enough to deter it from\n'
                 'invading Taiwan.\n'
             )
-            time.sleep(5)
+            time.sleep(2)
             input('\nPress enter to continue')
             tw_fourth_decision()
     else:
@@ -132,7 +132,7 @@ def tw_third_decision():
             'defeat is assured. You quickly surrender and\n'
             'concede to Chinas demands\n'
         )
-        time.sleep(5)
+        time.sleep(2)
         print('Game Over!')
         helpers.repeat_game()
 
@@ -156,7 +156,7 @@ def tw_fourth_decision():
             'You contact the US who respond and assure you that they will\n'
             'support Taiwan in this war.\n'
         )
-        time.sleep(5)
+        time.sleep(2)
         input('\nPress enter to continue')
         tw_fifth_decision()
     else:
@@ -167,7 +167,7 @@ def tw_fourth_decision():
             'defeat is assured. You quickly surrender and\n'
             'concede to Chinas demands\n'
         )
-        time.sleep(5)
+        time.sleep(2)
         print('Game Over!')
         helpers.repeat_game()
 
@@ -202,8 +202,9 @@ def tw_fifth_decision():
             'and invasion of Taiwan! China capitulates and signs a peace\n'
             'deal mediated by the US.\n'
         )
-        time.sleep(5)
+        time.sleep(2)
         print('You Win!')
+        helpers.repeat_game()
     else:
         print(
             'You decide to give China a taste of its own medicine.\n'
@@ -214,6 +215,6 @@ def tw_fifth_decision():
             "China is outraged that it's leaders were targeted and\n"
             'carries out a nuclear strike in retaliation\n'
         )
-        time.sleep(5)
+        time.sleep(2)
         print('Game Over!')
         helpers.repeat_game()
