@@ -12,7 +12,14 @@ Geo-Politik is a political game, putting you into the seat of power of your resp
 
 ### Lucid Charts
 
-[x](documents/game1-flowchart.pdf)
+- Taiwan game flowchart
+![Lucid Chart Flowchart Taiwan](documents/taiwan-game1-geopolitik.png)
+
+- Poland game flowchart
+![Lucid Chart Flowchart Poland](documents/poland-game2-geopolitik.png)
+
+- Mongolia game flowchart
+![Lucid Chart Flowchart Mongolia](documents/mongolia-game3-geopolitik.png)
 
 ## Features
 
@@ -32,7 +39,7 @@ Alternate scenarios, etc
 - Git was the technology used for version control. It is free and open sourced. [Git](https://git-scm.com/)
 - GitHub was used as a code hosting site for storing the code for this project online securely. [GitHub](https://github.com/)
 - Gitpod is a cloud based IDE which was used to write the code for this project. [Gitpod](https://www.gitpod.io/)
-- Heroku for deployment of the application. [Heroku]()
+- Heroku was used for deployment of the application. [Heroku](https://www.heroku.com/home)
 - Lucidchart is a web based tool that was used to create a flowchart for this project. [Lucidchart](https://bit.ly/3rgpbku)
 - AMIRESPONSIVE
 
