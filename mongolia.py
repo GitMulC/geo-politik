@@ -192,3 +192,44 @@ def mog_fourth_decision():
         time.sleep(2)
         print('Game Over!')
         helpers.repeat_game()
+
+
+def mog_fifth_decision():
+    """
+    Fifth decision function in Mongolia game/mog.
+    Determines outcome of the fifth decision the user makes.
+    """
+    helpers.clear()
+    print(
+        'China grows frustrated with you as you accept the Russian trade\n'
+        'deal. For fear of losing all access to the mines, China lashes out\n'
+        'and demands further access to all the rare mineral mines in\n'
+        'Mongolia! Your police force inform you that armed Chinese soldiers\n'
+        'have now begun to sneak over the border and into the mining areas.\n'
+        'You see a crisis on the horizon.\n'
+        "Do you grant China's request?\n"
+    )
+    choice = helpers.make_decision()
+    helpers.clear()
+    if choice == 'n':
+        print(
+            'You stand firm and order your border patrol and police to \n'
+            'arrest any armed personnel in the mining areas. China denies\n'
+            'sending armed people into Mongolia, but a UN commission refutes\n'
+            "this claim. China is ordered to expel all it's citizens from\n"
+            'Ömnögovi. Backed into a corner, China agrees and still agrees\n'
+            'to trade for your rare minerals!\n'
+        )
+        time.sleep(2)
+        print('You Win!')
+    else:
+        print(
+            'You fear armed clashes between your people and Chinese\n'
+            'insurgents and so you grant China more access. They slowly\n'
+            'wither your rare mineral supplies, leaving none for Russia or\n'
+            'other prospective countries. You are in financial ruins and are\n'
+            'under the influence of the Chinese!\n'
+        )
+        time.sleep(2)
+        print('Game Over!')
+        helpers.repeat_game()
