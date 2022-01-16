@@ -79,7 +79,7 @@ Geo-Politik consists of a wide range of features to give the user a fun and enga
 
 ## Technologies
 
-- Python was used as primary programming language for this project. [Python](https://en.wikipedia.org/wiki/Python_(programming_language)
+- Python was used as primary programming language for this project. [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 - Git was the technology used for version control. It is free and open sourced. [Git](https://git-scm.com/)
 - GitHub was used as a code hosting site for storing the code for this project online securely. [GitHub](https://github.com/)
 - Gitpod is a cloud based IDE which was used to write the code for this project. [Gitpod](https://www.gitpod.io/)
