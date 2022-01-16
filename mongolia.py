@@ -181,6 +181,7 @@ def mog_fourth_decision():
         )
         time.sleep(2)
         print('You Win!')
+        helpers.repeat_game()
     else:
         print(
             'Fearing Chinese retaliation and a possible trade war with\n'
@@ -222,6 +223,7 @@ def mog_fifth_decision():
         )
         time.sleep(2)
         print('You Win!')
+        helpers.repeat_game()
     else:
         print(
             'You fear armed clashes between your people and Chinese\n'
