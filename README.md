@@ -11,13 +11,13 @@ Geo-Politik is a political game, putting you into the seat of power of your resp
 ### Lucid Charts
 
 - Taiwan game flowchart
-![Lucid Chart Flowchart Taiwan](documents/taiwan-game1-geopolitik.png)
+![Lucid Chart Flowchart Taiwan](documents/flowcharts/taiwan-game1-geopolitik.png)
 
 - Poland game flowchart
-![Lucid Chart Flowchart Poland](documents/poland-game2-geopolitik.png)
+![Lucid Chart Flowchart Poland](documents/flowcharts/poland-game2-geopolitik.png)
 
 - Mongolia game flowchart
-![Lucid Chart Flowchart Mongolia](documents/mongolia-game3-geopolitik.png)
+![Lucid Chart Flowchart Mongolia](documents/flowcharts/mongolia-game3-geopolitik.png)
 
 ## Features
 
