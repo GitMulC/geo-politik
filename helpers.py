@@ -1,5 +1,6 @@
 import os
 from os import system, name
+import time
 import taiwan
 import poland
 import mongolia
@@ -34,7 +35,8 @@ def gamemode():
     """
     gamechoice = ''
     while gamechoice != '1' and gamechoice != '2' and gamechoice != '3':
-        print('Please select one option')
+        clear()
+        print('Please select one option to play:')
         gamechoice = input(
             '1 for Taiwan scenario\n'
             '2 for Poland scenario\n'
@@ -75,10 +77,28 @@ def main_menu():
             poland.pol_first_decision()
         elif gameselect == '3':
             mongolia.mog_first_decision()
-    # elif option == 'a':
-    #     about_page()
-    # else:
-    #     quit()
+    elif option == 'a':
+        clear()
+        print(
+            'You choose 1 of 3 scenarios to play:\n'
+            '1 >> Taiwan struggling with an agressive China\n'
+            '2 >> Poland facing down a Soviet style Russia\n'
+            '3 >> Mongolia between 2 reginal superpowers; Russia & China\n'
+            'Use the keys:\n'
+            'y for yes\n'
+            'n for no\n'
+            'd for deliberate\n'
+            'to navigate through your scenarios and survive the\n'
+            'geo-political challenges of your region!'
+        )
+        time.sleep(3)
+        input('\nPress enter to return to the Main Menu')
+        main_menu()
+    else:
+        print(
+                'Exiting game...'
+            )
+        time.sleep(3)
 
 
 def make_decision():
@@ -105,6 +125,12 @@ def repeat_game():
         play_again = input('Do you want to play again? (y or n): ').lower()
         if play_again == 'y':
             main_menu()
+            break
+        elif play_again == 'n':
+            print(
+                'Exiting game...'
+            )
+            time.sleep(3)
             break
         else:
             print('Invalid option, please try again.')
