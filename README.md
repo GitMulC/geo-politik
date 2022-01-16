@@ -95,6 +95,8 @@ To view all testing documentation please refer to [TESTING.md](TESTING.md)
 
 - ![Heroku Dashboard]()
 
+- ![Heroku Create New App]()
+
 - Next I gave my application a unique name geo-politik. Then I selected Europe for region.
 
 - ![Heroku App Creation]()
@@ -103,6 +105,8 @@ To view all testing documentation please refer to [TESTING.md](TESTING.md)
 
 - Next I scrolled down to the buildpacks section and clicked on Add buildpacks. I first added the heroku/python buildpack and then the heroku/nodejs buildpack. It is important to add the heroku/python buildpack first and then the heroku/nodejs buildpack.
 
+- ![Heroku Tabs]()
+
 - ![Heroku Config Vars & Buildpacks]()
 
 - I then clicked on the Deploy tab. Here I selected GitHub as the deployment method. I then connected to my geo-politik repository on GitHub by typing it in and selecting it.
@@ -110,6 +114,8 @@ To view all testing documentation please refer to [TESTING.md](TESTING.md)
 - Finally ensured that automatic deploys were from the main bracnh. I clicked on enable automatic deploys and built the app.
 
 - ![Heroku Deploy Tab]()
+
+- ![Heroku Automatic Deploy]()
 sign up to HEROKU, create app, select region, config vars(enviornment variables), buildpacks & order, deploy automatically, deploy tab select github SCREENSHOTS
 
 
@@ -133,4 +139,8 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 
 ### Media
 
+- GitHub repository for template and game visuals supplied by Code Institute. [Code Institute Python Essentials Template](https://github.com/Code-Institute-Org/python-essentials-template)
+
 ### Acknowledgments
+
+- I want to thank Code Institute and in particular my mentor Tim for his assitance throughout this projects' development.
