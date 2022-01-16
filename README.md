@@ -1,6 +1,6 @@
 # Geo-Politik
 
-Geo-Politik is a political game, putting you into the seat of power of your respective country. In Geo-Politik you make all of the important decisions and you are the driving force of all your countrys decisions. Geo-Politik is designed as a text based adventure game, but it has the user making geo-political decisions to traverese through the adventure. Rather than a playable character, you are a playable country that is navigating through an ever escalating geographical and political crisis. Play in 3 different scenarios each with its own unique country (Taiwan, Poland, Mongolia) and challenges. 
+Geo-Politik is a political game, putting you into the seat of power of your respective country. In Geo-Politik you make all of the important decisions and you are the driving force of all your countrys decisions. Geo-Politik is designed as a text based adventure game, but it has the user making geo-political decisions to traverese through the adventure. Rather than a playable character, you are a playable country that is navigating through an ever escalating geographical and political crisis. Play in 3 different scenarios each with its own unique country (Taiwan, Poland, Mongolia) and challenges.
 
 ## User Stories
 
@@ -66,6 +66,11 @@ Geo-Politik consists of a wide range of features to give the user a fun and enga
     - This prevents the user breaking or crashing the game inadvertently.
 
     - ![Check Input](documents/geo-politik-screenshots/geopolitik-check-input.png)
+
+- __Responsiveness__
+
+    - This project was shown to be responsive through the use of Am I Responsive tool online. 
+        - ![Responsiveness of GeoPolitik](documents/geo-politik-screenshots/geopolitik-responsiveness.png)
 
 ### Features Left to Implement
 
