@@ -29,19 +29,19 @@ Geo-Politik consists of a wide range of features to give the user a fun and enga
 
     - This feature is the opening page which is presented to the user. It displays a short description of the Geo-Politik game and 3 options to select from (about, play and quit).
 
-    - ![Main Menu Screen]()
+    - ![Main Menu Screen](documents/geo-politik-screenshots/geopolitik-main-menu.png)
 
 - __Play/Game Select__
 
     - The play/game select page is found after the user selects the play option from the main menu. Here the user selects which scenario they wish to play.
 
-    - ![Play/Game Select Screen]()
+    - ![Play/Game Select Screen](documents/geo-politik-screenshots/geopolitik-game-select.png)
 
 - __About__
 
     - This main menu option gives a short explaination of how to play Geo-Politik. It also outlines each playable scenario to the user.
 
-    - ![About Screen]()
+    - ![About Screen](documents/geo-politik-screenshots/geopolitik-about.png)
 
 - __Game Decisions__
 
@@ -49,14 +49,14 @@ Geo-Politik consists of a wide range of features to give the user a fun and enga
     - Every decision will lead to either another decision, a game over message or a win message. 
     - The user must traverse these decisions and carefully consider what their choice is in order to win the game.
 
-    - ![Game Decisions]()
+    - ![Game Decisions](documents/geo-politik-screenshots/geopolitik-game-decision.png)
 
 - __Replay Option__
 
     - At the end of each game scenario the user is presented with the option to play again. 
     - Selecting y will bring the user back to main menu, while n will exit the game entirely.
 
-    - ![Replay Option]()
+    - ![Replay Option](documents/geo-politik-screenshots/geopolitik-replay.png)
 
 - __Check Input__
 
@@ -65,7 +65,7 @@ Geo-Politik consists of a wide range of features to give the user a fun and enga
     - These checks also prompt the user for the correct input should an incorrect one be used.
     - This prevents the user breaking or crashing the game inadvertently.
 
-    - ![Check Input]()
+    - ![Check Input](documents/geo-politik-screenshots/geopolitik-check-input.png)
 
 ### Features Left to Implement
 
