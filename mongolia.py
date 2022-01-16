@@ -34,6 +34,7 @@ def mog_first_decision():
         )
         time.sleep(1)
         input('\nPress enter to continue')
+        mog_second_decision()
     else:
         print(
             'Your stubbornness to reach out for financial assistance is your\n'
@@ -46,3 +47,67 @@ def mog_first_decision():
         time.sleep(2)
         print('Game Over!')
         helpers.repeat_game()
+
+
+def mog_second_decision():
+    """
+    Second decision function in Mongolia game/mog.
+    Determines outcome of the second decision the user makes.
+    """
+    helpers.clear()
+    print(
+        'You begin to fear the loss of ties with Russia as you come to the\n'
+        'negotiating table with the Chinese. But the reality remains, you\n'
+        'need strong economic ties with both nations to survive. China\n'
+        'promisies a strong boost to the Mongolian economy by way of\n'
+        'relocating factories and supply chains into and through Mongolia.\n'
+        'the only catch is that you must allow Chinese mining companies\n'
+        'access to your rare mineral mines in Ömnögovi. You need those\n'
+        'minerals for trading, and Chinese access may drive prices down for\n'
+        'rare minerals hurting your economy.\n'
+        'Do you sign this trade deal with China?'
+    )
+    choice = helpers.make_decision()
+    helpers.clear()
+    if choice == 'y':
+        print(
+            'You sign off on the trade agreement. China swiftly moves into\n'
+            'Mongolia, building much of the promised infrastructure near\n'
+            'near the mines. This deal may not go so well!\n'
+        )
+        time.sleep(2)
+        input('\nPress enter to continue')
+        mog_third_decision()
+    elif choice == 'd':
+        print(
+            'You hesitate fearing the wrath of Russia! You are not sure\n'
+            'about the ramifacations this may have with your relationship\n'
+            'with Russia. You consult with your advisors\n'
+        )
+        time.sleep(2)
+        input('\nPress enter to continue')
+        mog_fifth_decision()
+    else:
+        print(
+            'At the last second you back out of the trade agreement\n'
+            'China are not too pleased with you! Your economy then spins\n'
+            'into freefall. You turn to Russia and any other neighbour for\n'
+            'for assistance, but it is too late. Unable to sustain you\n'
+            'economy, your government collapses and Mongolia slips into\n'
+            'disaster. Russia and China divide the ruins of Mongolia amoungst\n'
+            'themselves.'
+        )
+        time.sleep(2)
+        print('Game Over!')
+        helpers.repeat_game()
+
+
+def mog_third_decision():
+    """
+    Third decision function in Mongolia game/mog.
+    Determines outcome of the third decision the user makes.
+    """
+    helpers.clear()
+    print(
+        ''
+    )
