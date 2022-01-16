@@ -94,8 +94,8 @@ def mog_second_decision():
             'into freefall. You turn to Russia and any other neighbour for\n'
             'for assistance, but it is too late. Unable to sustain you\n'
             'economy, your government collapses and Mongolia slips into\n'
-            'disaster. Russia and China divide the ruins of Mongolia amoungst\n'
-            'themselves.'
+            'disaster. Russia and China divide the ruins of Mongolia\n'
+            'amoungst themselves.\n'
         )
         time.sleep(2)
         print('Game Over!')
@@ -109,5 +109,43 @@ def mog_third_decision():
     """
     helpers.clear()
     print(
-        ''
+        'You soon realise that this trade agreement mostly benefits China.\n'
+        'Much of the infrastructure that China promised it would build all\n'
+        'all over Mongolia is only being built near the mines. This gives\n'
+        'Mongolia only a short, temporary economic boost. Rare mineral\n'
+        'plummet and as a result you economy slows its growth. Seeing their\n'
+        'chance, Russia sends an envoy to Ulaanbaatar to discuss a new trade\n'
+        'deal. Russia promises infrastructure country-wide and in return\n'
+        'wants closer diplomatic ties along with special access your\n'
+        'minerals and agricultural produce.\n'
+        'Will you accept the Russians trade agreement?\n'
     )
+    choice = helpers.make_decision()
+    helpers.clear()
+    if choice == 'y':
+        print(
+            'China takes note of this counter offer by Russia, things may\n'
+            'get complicated!\n'
+        )
+        time.sleep(2)
+        input('\nPress enter to continue')
+        mog_fifth_decision()
+    if choice == 'd':
+        print(
+            'While you are greatful for the Russians counter offer, you\n'
+            'remain cautious. You worry about coming between 2 superpowers!\n'
+        )
+        time.sleep(2)
+        input('\nPress enter to continue')
+        mog_fourth_decision()
+    else:
+        print(
+            'Fearing Chinese retaliation and a possible trade war with\n'
+            'Beijing you refuse the offer. But China only continues to\n'
+            'take advantage of your mines. Soon you lose control of all\n'
+            'your mining operations. China now dominates Mongolia through\n'
+            'its economic ties with you!\n'
+        )
+        time.sleep(2)
+        print('Game Over!')
+        helpers.repeat_game()
